@@ -123,9 +123,9 @@ int main(int argc,char* argv[]){
 		initnode[curnum] = best_seed;
 		curnum++;
 	}//while(curnum < initnum)
-	printf("-----------------\n");
+	printf("top ten seed set:\n");
 	for(int i=0;i<curnum;i++)	printf("%d\t",initnode[i]);
-	printf("%.3lf\n", max_influence/(double)runtimes);
+	printf("\nmax influence: %.3lf\n", max_influence/(double)runtimes);
 	fclose(read_edge);
 	return 0;
 }
